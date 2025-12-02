@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noa Travel Document - Hubungi Kami</title>
+
+  <!-- Favicon / Logo di Title -->
+  <link rel="icon" type="image/png" href="assets/logo-noatravel.png" />
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Icon & Styles -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!--
+    CATATAN TEKNIS:
+    - Stack: HTML5 + CSS3 + JavaScript (tanpa framework).
+    - Layout & tampilan diatur di css/styles.css.
+    - Interaksi umum (navbar, mobile menu, dll) di js/main.js.
+  -->
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="nv-header">
+    <div class="nv-container nv-nav">
+      <!-- Kiri: Logo + nama brand -->
+      <div class="nv-nav-left">
+        <div class="nv-logo-wrap">
+          <img
+            src="assets/logo-noatravel.png"
+            alt="Logo NoaTravel"
+            class="nv-logo-img"
+          />
+        </div>
+        <div class="nv-brand-text">
+          <span class="nv-brand-main">Noa Travel Document</span>
+        </div>
+      </div>
+
+      <!-- Tengah + kanan: menu + tombol CTA -->
+      <nav class="nv-nav-links">
+        <ul class="nv-nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="katalog-visa.html">Katalog Visa</a></li>
+          <li><a href="cara-kerja.html">Cara Kerja</a></li>
+          <li><a href="kenapa.html">Kenapa NoaTravel</a></li>
+          <li><a href="testimoni.html">Testimoni</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <a href="hubungi.html" class="nv-btn-primary nv-btn-small nv-nav-cta">
+          Hubungi Kami
+        </a>
+      </nav>
+
+      <!-- Tombol menu untuk mobile -->
+      <button
+        class="nv-menu-toggle"
+        id="menuToggle"
+        aria-label="Tombol menu navigasi"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nv-mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="katalog-visa.html">Katalog Visa</a>
+      <a href="cara-kerja.html">Cara Kerja</a>
+      <a href="kenapa.html">Kenapa NoaTravel</a>
+      <a href="testimoni.html">Testimoni</a>
+      <a href="faq.html">FAQ</a>
+      <a href="hubungi.html" class="nv-btn-primary nv-btn-small nv-nav-cta">
+        Hubungi Kami
+      </a>
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO HUBUNGI KAMI
+  ========================== -->
+  <section
+    id="hubungi"
+    class="nv-contact-hero"
+    style="
+      background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.6)),
+        url('assets/gunung.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    "
+  >
+    <div class="nv-container">
+      <div class="nv-contact-hero-text">
+        <h1>Hubungi Tim NoaTravel</h1>
+        <p>
+          Sampaikan kebutuhan perjalanan dan jenis visa yang Anda perlukan.
+          Tim NoaTravel siap membantu menjelaskan alur, persyaratan, dan
+          estimasi proses dengan jelas dan transparan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       KONTEN HUBUNGI KAMI
+  ========================== -->
+  <main class="nv-contact-card-wrap">
+    <div class="nv-container">
+      <div class="nv-contact-card-layout">
+        <!-- KIRI: Info kantor & WhatsApp -->
+        <div class="nv-contact-info">
+          <h2>Dapatkan Bantuan</h2>
+          <p class="nv-contact-info-text">
+            Anda dapat menghubungi kami melalui WhatsApp, email, atau datang ke
+            kantor (dengan janji temu). Kami sarankan untuk konsultasi dulu
+            sebelum mengirim dokumen agar proses lebih efisien.
+          </p>
+
+          <div class="nv-contact-info-block">
+            <div class="nv-contact-info-icon">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div>
+              <h3>Kantor NoaTravel</h3>
+              <p>
+                Jl. Prof. DR. Satrio No.235 RT.2/RW.6, Kuningan, Karet Kuningan,
+                Setiabudi, Jakarta Selatan, DKI Jakarta 12940
+              </p>
+            </div>
+          </div>
+
+          <div class="nv-contact-info-block">
+            <div class="nv-contact-info-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <h3>WhatsApp Konsultasi</h3>
+              <p>
+                Reza Septian – 
+                <a href="https://wa.me/6282111187730" target="_blank"
+                  >+62 821-1118-7730</a
+                ><br />
+                Fidella Eka Pertiwi – 
+                <a href="https://wa.me/6287715066432" target="_blank"
+                  >+62 877-1506-6432</a
+                >
+              </p>
+              <p class="nv-contact-note">
+                <i class="fa-solid fa-circle-info"></i>
+                Respon tercepat biasanya melalui WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <div class="nv-contact-info-block">
+            <div class="nv-contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:rezaseptiann7@gmail.com" id="emailDisplay">
+                  rezaseptiann7@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="nv-contact-info-extra">
+            <h4>Jam Operasional</h4>
+            <p>
+              Senin – Jumat : 09.00 – 17.00 WIB<br />
+              Sabtu dan Minggu serta tanggal merah : by appointment.
+            </p>
+          </div>
+
+          <div class="nv-contact-info-social">
+            <span>Ikuti NoaTravel di:</span>
+            <div class="nv-contact-social-icons">
+              <a
+                href="https://www.instagram.com/noatraveldocument/"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/6282111187730"
+                aria-label="WhatsApp"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- KANAN: Form pesan (FormSubmit) -->
+        <div class="nv-contact-form">
+          <h2>Kirim Pesan ke NoaTravel</h2>
+          <p class="nv-contact-form-text">
+            Isi formulir di bawah ini, kami akan menghubungi Anda kembali
+            melalui WhatsApp atau email untuk menjelaskan detail proses dan
+            estimasi biaya.
+          </p>
+
+          <form
+            class="nv-form-grid"
+            action="https://formsubmit.co/rezaseptiann7@gmail.com"
+            method="POST"
+          >
+            <!-- SETTINGS FORM SUBMIT -->
+            <input type="hidden" name="_subject" value="Lead Baru dari NoaTravel" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="nv-form-group">
+              <label for="namaLengkap">Nama Lengkap</label>
+              <input
+                id="namaLengkap"
+                name="nama"
+                type="text"
+                placeholder="Tulis nama lengkap Anda"
+                required
+              />
+            </div>
+
+            <div class="nv-form-group">
+              <label for="waNumber">Nomor WhatsApp</label>
+              <input
+                id="waNumber"
+                name="whatsapp"
+                type="tel"
+                placeholder="Contoh: 08xxx / +62xxx"
+                required
+              />
+            </div>
+
+            <div class="nv-form-group">
+              <label for="emailInput">Email</label>
+              <input
+                id="emailInput"
+                name="email"
+                type="email"
+                placeholder="Alamat email aktif"
+              />
+            </div>
+
+            <div class="nv-form-group">
+              <label for="negaraTujuanInput">Negara Tujuan</label>
+              <input
+                id="negaraTujuanInput"
+                name="negara"
+                type="text"
+                placeholder="Contoh: Jepang, Schengen, Korea, dll."
+              />
+            </div>
+
+            <div class="nv-form-group nv-form-group-full">
+              <label for="jenisVisaSelect">Jenis Visa</label>
+              <select id="jenisVisaSelect" name="jenisVisa">
+                <option value="">Pilih jenis visa</option>
+                <option>Visa Turis</option>
+                <option>Visa Bisnis</option>
+                <option>Visa Student / Pelajar</option>
+                <option>Visa Kerja</option>
+                <option>Lainnya / Konsultasi dulu</option>
+              </select>
+            </div>
+
+            <div class="nv-form-group nv-form-group-full">
+              <label for="pesanInput">Pesan / Detail Rencana Perjalanan</label>
+              <textarea
+                id="pesanInput"
+                name="pesan"
+                rows="4"
+                placeholder="Ceritakan singkat rencana perjalanan dan pertanyaan Anda"
+              ></textarea>
+            </div>
+
+            <div class="nv-form-actions">
+              <button
+                type="submit"
+                class="nv-btn-primary nv-contact-submit"
+              >
+                Kirim Pesan
+              </button>
+
+              <a
+                href="https://wa.me/6282111187730"
+                target="_blank"
+                class="nv-btn-outline nv-contact-wa-direct"
+              >
+                Chat via WhatsApp
+              </a>
+            </div>
+
+            <p class="nv-contact-privacy">
+              <i class="fa-solid fa-shield-halved"></i>Data Anda hanya digunakan untuk konsultasi visa 
+              dan tidak dibagikan ke pihak mana pun tanpa persetujuan Anda.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================
+       MAP LOKASI
+  ========================== -->
+  <div class="nv-contact-map">
+    <iframe
+      src="https://www.google.com/maps?q=Jl.+Prof.+DR.+Satrio+No.235,+Kuningan,+Karet+Kuningan,+Setiabudi,+Jakarta+Selatan&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      aria-label="Lokasi Kantor NoaTravel"
+    ></iframe>
+  </div>
+
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
+  <!-- Tidak perlu EmailJS lagi -->
+
+  <!-- Main JS (navbar, mobile menu, dll) -->
+  <script src="js/main.js"></script>
+</body>
+</html>

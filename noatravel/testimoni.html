@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimoni-Noa Travel</title>
+  <!-- Favicon / Logo di Title -->
+  <link rel="icon" type="image/png" href="assets/logo-noatravel.png">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!--
+    CATATAN TEKNIS:
+    - Stack: HTML5 + CSS3 + JavaScript (tanpa framework).
+    - Layout & tampilan diatur di css/styles.css.
+    - Data negara & kontak ada di js/main.js (lihat komentar di file tersebut).
+  -->
+
+  <!-- NAVBAR -->
+ <header class="nv-header">
+  <div class="nv-container nv-nav">
+    <!-- Kiri: Logo + nama brand -->
+    <div class="nv-nav-left">
+      <div class="nv-logo-wrap">
+        <img src="assets/logo-noatravel.png" alt="Logo NoaTravel" class="nv-logo-img" />
+      </div>
+      <div class="nv-brand-text">
+        <span class="nv-brand-main">Noa Travel Document</span>
+       
+      </div>
+    </div>
+
+    <!-- Tengah + kanan: menu + tombol CTA -->
+    <nav class="nv-nav-links">
+      <ul class="nv-nav-menu">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="katalog-visa.html">Katalog Visa</a></li>
+       <li><a href="cara-kerja.html">Cara Kerja</a></li>
+       <li><a href="kenapa.html">Kenapa NoaTravel</a></li>
+       <li><a href="testimoni.html">Testimoni</a></li>
+       <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <a href="hubungi.html" class="nv-btn-primary nv-btn-small nv-nav-cta">
+        Hubungi Kami
+      </a>
+    </nav>
+
+    <!-- Tombol menu untuk mobile -->
+    <button class="nv-menu-toggle" id="menuToggle" aria-label="Tombol menu navigasi">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="nv-mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="katalog-visa.html">Katalog Visa</a>
+    <a href="cara-kerja.html">Cara Kerja</a>
+    <a href="kenapa.html">Kenapa NoaTravel</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="faq.html">FAQ</a>
+    <a href="hubungi.html">Hubungi Kami</a>
+  </div>
+</header>
+
+<section class="nv-section">
+  <div class="nv-container">
+    <header class="nv-section-header">
+      <h1 class="nv-section-title">Testimoni Klien NoaTravel</h1>
+      <p class="nv-section-subtitle">
+        Beberapa cerita singkat dari klien yang pernah dibantu NoaTravel dalam pengurusan visa.
+      </p>
+    </header>
+
+    <div class="nv-testi-grid">
+      <article class="nv-testi-card">
+        <div class="nv-testi-top">
+          <img src="assets/testi-1.jpg" alt="Foto klien 1" class="nv-testi-avatar" />
+          <div>
+            <div class="nv-testi-name">Nadia</div>
+            <div class="nv-testi-meta">Jakarta · Visa Jepang</div>
+          </div>
+        </div>
+        <p class="nv-testi-text">
+          “Sangat terbantu urus visa Jepang! Prosesnya jelas, dan saya selalu dikabari
+          setiap ada perkembangan dari kedutaan.”
+        </p>
+      </article>
+
+      <article class="nv-testi-card">
+        <div class="nv-testi-top">
+          <img src="assets/testi-2.jpg" alt="Foto klien 2" class="nv-testi-avatar" />
+          <div>
+            <div class="nv-testi-name">Rama</div>
+            <div class="nv-testi-meta">Bekasi · Visa Amerika Serikat</div>
+          </div>
+        </div>
+        <p class="nv-testi-text">
+          “Awalnya bingung soal wawancara USA, tapi tim NoaTravel jelaskan dengan sabar.
+          Dokumen saya juga dibantu dicek sampai benar-benar siap.”
+        </p>
+      </article>
+
+      <article class="nv-testi-card">
+        <div class="nv-testi-top">
+          <img src="assets/testi-3.jpg" alt="Foto klien 3" class="nv-testi-avatar" />
+          <div>
+            <div class="nv-testi-name">Dewi</div>
+            <div class="nv-testi-meta">Tangerang · Visa Schengen</div>
+          </div>
+        </div>
+        <p class="nv-testi-text">
+          “Pertama kali mengurus visa Schengen, tapi karena diarahkan dengan jelas,
+          saya jadi lebih tenang dan paham langkah-langkahnya.”
+        </p>
+      </article>
+
+      <article class="nv-testi-card">
+        <div class="nv-testi-top">
+          <img src="assets/testi-4.jpg" alt="Foto klien 4" class="nv-testi-avatar" />
+          <div>
+            <div class="nv-testi-name">Fikri</div>
+            <div class="nv-testi-meta">Surabaya · Visa Bisnis Korea</div>
+          </div>
+        </div>
+        <p class="nv-testi-text">
+          “Untuk perjalanan bisnis, saya butuh kepastian waktu. NoaTravel bantu menjelaskan
+          estimasi proses dan opsi terbaik sesuai jadwal saya.”
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="nv-footer">
+  <div class="nv-container nv-footer-grid nv-footer-two">
+    
+    <!-- Kolom kiri: Brand & deskripsi -->
+    <div class="nv-footer-col nv-footer-about">
+      <div class="nv-footer-logo">
+        <img src="assets/logo-noatravel.png" alt="Logo NoaTravel" />
+        <div>
+          <h3>NoaTravel Visa Center</h3>
+          <p class="nv-footer-tagline">
+            Jasa pengurusan visa turis, bisnis, student, dan kerja.
+          </p>
+        </div>
+      </div>
+
+      <p class="nv-footer-desc">
+        NoaTravel membantu mengurus aplikasi visa Anda dengan proses yang simpel,
+        terarah, dan transparan. Kami tidak berafiliasi dengan kedutaan manapun;
+        keputusan visa sepenuhnya ada pada pihak kedutaan masing-masing negara.
+      </p>
+
+      <div class="nv-footer-social">
+        <a href="https://www.instagram.com/noatraveldocument/" class="social-icon" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/6282111187730" target="_blank" class="social-icon" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Kolom kanan: Kontak -->
+    <div class="nv-footer-col nv-footer-contact">
+      <h4>Hubungi NoaTravel</h4>
+      <ul class="nv-footer-contact-list">
+        <li>
+          <span class="nv-footer-icon"><i class="fa-solid fa-user-tie"></i></span>
+          <div>
+            <span class="nv-footer-label">Konsultan Visa</span>
+            <span class="nv-footer-value">
+              Reza Septian – 
+              <a href="https://wa.me/6282111187730" target="_blank">+62 821-1118-7730</a>
+            </span>
+          </div>
+        </li>
+        <li>
+          <span class="nv-footer-icon"><i class="fa-solid fa-headset"></i></span>
+          <div>
+            <span class="nv-footer-label">Customer Support</span>
+            <span class="nv-footer-value">
+              Fidella Eka Pertiwi – 
+              <a href="https://wa.me/6287715066432" target="_blank">+62 877-1506-6432</a>
+            </span>
+          </div>
+        </li>
+        <li>
+          <span class="nv-footer-icon"><i class="fa-solid fa-envelope"></i></span>
+          <div>
+            <span class="nv-footer-label">Email</span>
+            <span class="nv-footer-value">
+              <a href="mailto:rezaseptiann7@gmail.com">rezaseptiann7@gmail.com</a>
+            </span>
+          </div>
+        </li>
+        <li>
+          <span class="nv-footer-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <div>
+            <span class="nv-footer-label">Alamat Kantor</span>
+            <span class="nv-footer-value">
+              <a href="https://www.google.com/maps?q=Jl.+Prof.+DR.+Satrio+No.235,+Kuningan,+Karet+Kuningan,+Setiabudi,+Jakarta+Selatan"
+                 target="_blank">
+                Jl. Prof. DR. Satrio No.235 RT.2/RW.6, Kuningan, Karet Kuningan, 
+                Setiabudi, Jakarta Selatan, DKI Jakarta 12940
+              </a>
+            </span>
+          </div>
+        </li>
+        <li>
+          <span class="nv-footer-icon"><i class="fa-solid fa-globe"></i></span>
+          <div>
+            <span class="nv-footer-label">Website</span>
+            <span class="nv-footer-value">www.noatravel.id</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="nv-footer-bottom">
+    <p>© 2025 NoaTravel – Jasa Pengurusan Visa & Travel. Seluruh hak cipta dilindungi.</p>
+    <p class="nv-footer-disclaimer">
+      NoaTravel tidak berafiliasi dengan kedutaan atau instansi pemerintah manapun. 
+      Keputusan persetujuan atau penolakan visa sepenuhnya merupakan wewenang kedutaan.
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
